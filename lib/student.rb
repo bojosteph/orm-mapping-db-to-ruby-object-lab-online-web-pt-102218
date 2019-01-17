@@ -29,7 +29,7 @@ class Student
       SELECT *
       FROM students
       WHERE name = ?
-      limit 1
+      lIMIT
     SQL
     
     DB[:conn].execute(sql, name).map do |row|
